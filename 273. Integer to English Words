@@ -55,6 +55,8 @@ class Solution:
                             word += f" {numList[tens]}"
                     if ones>=1 and tens>=20:
                         word += f" {numList[ones]}"
+                    elif ones>=1 and tens<=10:
+                        word += f" {numList[ones]}"
                     if digitName>=1000:
                         word+=f" {numList[digitName]}"
                     num = num - digitAmount*digitName
